@@ -3,43 +3,84 @@
     padding: 0;
     margin: 0;
 }
-header {  
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-header, 
-nav {
+header {
+    height: 150px;
     background-color: lightslategray;
-}
-nav ul {
     display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-}
-#nav-bar-li a {
-    padding-left: 10px;
-    color: aliceblue; 
-}
-li {
-    list-style: none;
+    justify-content: space-between;
+    align-items: center; /* Change to center to vertically align content */
 }
 #profile-img {
-    height: 125px;
-    display: inline;
-}
-.nav-img {
+    height: 100%; /* Ensure the section takes up the full height of the header */
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center; /* Vertically center the image */
 }
-article {
-    background-color: beige;
+#profile-img img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain; /* Ensures the image fits within the container */
 }
-aside {
-   
+
+header, nav {
+    background-color: lightslategray;
+}
+
+header h1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: aliceblue;
+}
+
+header #profile-img {
+    display: flex;
+}
+
+assistant icon
+Thank you for providing the HTML and CSS code. To ensure that the image inside the #profile-img section fits within the 150px tall header, you can make the following adjustments to your CSS:
+
+header {
+    height: 150px;
+    background-color: lightslategray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Change to center to vertically align content */
+}
+
+#profile-img {
+    height: 100%; /* Ensure the section takes up the full height of the header */
+    display: flex;
+    align-items: center; /* Vertically center the image */
+}
+
+#profile-img img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain; /* Ensures the image fits within the container */
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adjust spacing between nav items */
+    height: 100%; /* Ensure the nav section takes up the full height */
+}
+
+.nav-list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding-top: 10px;
+}
+
+.nav-list a:hover {
+    background-color: darkslategray;
+}
+.float-left {
+    display: block;
     float: left;
-}
-.float-right {
-    float: right;
+    border-left: 3px;
+    border-color:bisque ;
+    height: 100vh;
 }
