@@ -4,11 +4,13 @@
     margin: 0;
 }
 header {
-    height: 150px;
+    /* height: 150px; */
     background-color: lightslategray;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; /* Change to center to vertically align content */
+    flex: 1;
 }
 #profile-img {
     height: 100%; /* Ensure the section takes up the full height of the header */
@@ -16,9 +18,10 @@ header {
     align-items: center; /* Vertically center the image */
 }
 #profile-img img {
-    max-height: 100%;
+    height: 150px;
     max-width: 100%;
     object-fit: contain; /* Ensures the image fits within the container */
+    display: flex;
 }
 
 header, nav {
@@ -33,29 +36,6 @@ header h1 {
 
 header #profile-img {
     display: flex;
-}
-
-assistant icon
-Thank you for providing the HTML and CSS code. To ensure that the image inside the #profile-img section fits within the 150px tall header, you can make the following adjustments to your CSS:
-
-header {
-    height: 150px;
-    background-color: lightslategray;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Change to center to vertically align content */
-}
-
-#profile-img {
-    height: 100%; /* Ensure the section takes up the full height of the header */
-    display: flex;
-    align-items: center; /* Vertically center the image */
-}
-
-#profile-img img {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain; /* Ensures the image fits within the container */
 }
 
 .nav-list {
@@ -77,10 +57,44 @@ header {
 .nav-list a:hover {
     background-color: darkslategray;
 }
-.float-left {
-    display: block;
-    float: left;
-    border-left: 3px;
-    border-color:bisque ;
-    height: 100vh;
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+main .work-me-sect {
+    padding: 10px;
+}
+aside {
+    background-color: bisque;
+    flex: 25%;
+    border-right: 10px;
+    border-right-style: solid;
+    border-right-color: aqua;
+    text-align: right;
+}
+.aside-about h2 {
+    padding-right: 10px;
+}
+.column {
+    flex: 75%;
+    background-color: blanchedalmond;
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        flex-direction: column;
+        align-content: center;
+    } 
+    #profile-img img {
+        margin: auto;
+    }
+    main {
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+    aside {
+        text-align: center;
+        border: none;
+    }
 }
