@@ -23,6 +23,7 @@ header {
     justify-content: space-between;
     align-items: center; /* Change to center to vertically align content */
     flex: 1;
+    padding: 0 10px;
 }
 #profile-img {
     height: 100%; /* Ensure the section takes up the full height of the header */
@@ -75,6 +76,7 @@ main .work-me-sect {
 .main-sect {
     display: flex;
     padding: 10px;
+    width: 100vw;
 }
 aside {
     background-color: bisque;
@@ -95,6 +97,33 @@ aside {
 .column p {
     font-size: 175%;
 }
+.ms-img {
+    border: aqua;
+    border-width: 10px;
+    /* padding: 10px; */
+    border-style: solid;
+    /* display: flex; */
+    width: 30%;
+} 
+
+.ms-img img {
+    object-fit: contain;
+    display: flex;
+    max-width: 100%;
+}
+
+#img-flexbox {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    flex: 75%;
+}
+#p1img {
+    flex: 100%;
+    max-width: 100%;
+    display: flex;
+}
+
 
 @media screen and (max-width: 992px) {
     header {
