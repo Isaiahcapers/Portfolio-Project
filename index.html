@@ -11,13 +11,13 @@
         <section id="profile-img">
             <img src="./assests/images/Black Simple Bold Professional Twitter Profile Picture.png" alt="headshot Professional photo">
         </section>
-        <h1>My Portfolio</h1>
+        <h1>Isaiah C</h1>
         <section id="navbar">
             <nav class="nav-list">
                 <a href="#about-me-sect"><h2>About Me</h2></a>
                 <a href="#work-me-sect"><h2> My Work</h2></a>
                 <a href="#contact-sect"><h2>Contact Me</h2></a>
-                <a href="resume-sect"><h2>Resume</h2></a>
+                <a href=><h2>Resume</h2></a>
             </nav>
         </section>
     </header>
@@ -25,43 +25,60 @@
         <section class="main-sect">
             <aside id="aside-about" class="asicol">
                <h2>About <br>Me</h2>
-               
-                <!-- when i do a border for this it should stretch to math the length of the left section 
-                 should include a side section and then 3 sections for portfolio work thinking about using css flex to lay it out.-->
             </aside>
             <section id="about-me-sect" class="column">
                 <p>I am a dedicated software engineering student with a passion for creating innovative solutions. Alongside my technical pursuits, I am also a licensed pilot, embracing challenges both in the digital realm and the skies above. Currently, I am honing my skills in full-stack development to become a well-rounded developer. I am excited to combine my love for technology and aviation to craft unique and impactful projects.</p>
             </section>
         </section>
-        <article class="main-sect2" >
+        <article class="main-sect2" id="#work-me-sect" >
             <aside id="aside-work" class="asicol"> 
                 <h2>My<br>Work</h2>
             </aside>
             <section id="img-flexbox">
-                <section id="p1img" class="ms-img"> 
-                    <!-- this section needs a set width and height, what if we set the width 75% of the screen via the flex but gave it a fix height, the container should already have a designtaed with so the height should only need to be set. -->
-                    <img src="./assests/images/Career.png" alt="">
+                <section id="p1img" class = "ms-img"> 
+                    <a href="https://isaiahcapers.github.io/Horiseon-accessibility-refactor/">
+                    <img src="./assests/images/horiseon.png" alt="horiseon-img"></a>
+                    <div class="workitem">
+                        <h3>Horiseon Website</h3>
+                        <p>HTML/CSS</p>
+                    </div>
                 </section>
                 <section id="box4flex">
                     <section id="p2img" class="ms-img">
-                        <img src="./assests/images/placeholder-img.png" alt="">
+                        <img src="./assests/images/placeholder-img.png" alt="ledwall-img">
+                        <div class="workitem">
+                            <h3>LED Wall</h3>
+                            <p>Node/IoT</p>
+                        </div>
                     </section>
                     <section id="p3img" class="ms-img">
-                        <img src="./assests/images/placeholder-img.png" alt="">
+                        <img src="./assests/images/placeholder-img.png" alt="Calculator-img">
+                        <div class="workitem">
+                            <h3>Calculator</h3>
+                            <p>React/JavaScript/CSS</p>
+                        </div>
                     </section>
                     <section id="p4img" class="ms-img">
-                        <img src="./assests/images/placeholder-img.png" alt="">
+                        <img src="./assests/images/placeholder-img.png" alt="coding-img">
+                        <div class="workitem">
+                            <h3>Pastel Puzzels</h3>
+                            <p>MERN Stacks</p>
+                        </div>
                     </section>
                     <section id="p5img" class="ms-img">
-                        <img src="./assests/images/placeholder-img.png" alt="">
+                        <img src="./assests/images/placeholder-img.png" alt="portfolio-img">
+                        <div class="workitem">
+                            <h3>Run Buddy</h3>
+                            <p>HTML/CSS</p>
+                        </div>
                     </section>
                 </section>
             </section>
         </article>
     </main>
-    <footer>
-        <aside id="contact-sect">
-            <h2>Contact<br>Me</h2>
+    <footer id="contact-sect">
+        <aside class="asicol">
+            <h2>ContactMe</h2>
         </aside>
         <section class="footer">
             <a href="">1-800-Call-Me</a>
